@@ -8,7 +8,7 @@ function App() {
   let [wDetails, setWdetails] = useState();
   let getData = (event) => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=588befef7d246bb6601c7425fb75150b&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=588befef7d246bb6601c7425fb75150b&units=metric`
     )
       .then((res) => res.json())
       .then((finalres) => {
